@@ -35,7 +35,7 @@ fcColr <- c("red", "blue")[(foldChanges > 0) + 1]
 barplot(foldChanges, col=fcColr)
 legend(0, 6, legend=c("More prevalent in native", "More prevalent in exotic"), col=c("red", "blue"), pch=c(19,19))
 
-# Visualize again, with a minor adjustment so that ordes with not difference appear to have no difference (originally, the difference looked substantial)
+# Visualize again, with a minor adjustment so that orders with no difference appear to have no difference (originally, the difference looked substantial)
 adj <- c(1, -1)[(foldChanges > 0) + 1]
 adjFoldChanges <- foldChanges + adj
 barplot(adjFoldChanges, col=fcColr)
